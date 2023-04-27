@@ -96,6 +96,7 @@ a {
 .searchBar button{    
     border:0;
     background-color: inherit;    
+    padding:5px;
 }
 
 
@@ -119,3 +120,38 @@ a {
 }
 
 /*Bottom Header Layout*/
+.bottomHeader{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*left side of the bottom header*/
+.identityContainer{
+    display:grid;
+    grid-template-columns: max-content 1fr;
+    gap: .5rem;
+    align-items: center;
+    padding: 5px;
+}
+
+.greetingIcon{
+    transform: scale(1.75);
+}
+
+.greeting{
+    font-size: .75rem;
+}
+
+/*rigth side of the bottom header*/
+.header .menu{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.menu .btn{
+    background-color: var(--primary);
+    color: var(--gray-1);
+    font-weight: 500;
+    padding: 0.75em 2.3em;
+    border-radius: 99em;
+}
