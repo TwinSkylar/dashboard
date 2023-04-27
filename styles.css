@@ -1,5 +1,5 @@
 :root {
-    --icon-gap: 10px;
+    --icon-gap: 5px;
 }
 
 * {
@@ -73,35 +73,49 @@ a {
     /*adds spacing between list items*/
 }
 
-/*Top Layout*/
+/*Header Layout*/
 .header {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content 1fr;
+    gap:20px;
     padding: 10px;
 }
 
-.header ul {
+/*Top Header Layout*/
+
+.searchBar{
+    display: flex;    
+}
+
+#search{
+    width:80%;
+    border-radius: 10px;
+    border:0;
+}
+
+.searchBar button{    
+    border:0;
+    background-color: inherit;    
+}
+
+
+.topHeader{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.topHeader ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr max-content;
     gap: 20px;
 }
 
-#search {
-    border-radius: 10px;
-    border: 0;
-    width: 75%
-}
-
-
-.header form {
-    display: grid;
-    grid-template-columns: auto 1fr;
-
-}
-
-.header .profileMenu {
+.topHeader .profileMenu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
+/*Bottom Header Layout*/
