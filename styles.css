@@ -1,0 +1,91 @@
+:root {
+    --icon-gap: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    background-color: #393f4d;
+}
+
+
+.sidebar {
+    background-color: #ff55d4;
+}
+
+.navbar {
+    background-color: #55ff7f;
+}
+
+.article {
+    background-color: #55cfff;
+}
+
+/*Overall layout*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 1fr;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+    grid-column: span 2;
+}
+
+/*Sidebar and left side layout*/
+.sidebar {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /*Space between menu groupings*/
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: var(--icon-gap);
+    margin-bottom: 5px;  /*adds spacing between list items*/
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    column-gap: var(--icon-gap);
+    font-size: 2rem;
+}
+
+/*Top Layout*/
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.header .identityContainer {}
