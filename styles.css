@@ -200,5 +200,28 @@ a {
 
 }
 
+/*Navbar on the right side*/
 .navbar{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap:1em;
+    padding:15px;
+}
+.announcement-item{
+    border: black solid;
+}
+.announcement-container{
+    display:flex;
+    flex-direction: column;
+    gap:1em; 
+    padding:10px;
+}
+
+.announcement-card{
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+}
+.announcement-title{
+    font-weight: bold;
 }
